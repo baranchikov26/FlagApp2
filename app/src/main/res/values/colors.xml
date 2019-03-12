@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="color_btn_main">#FFFFFF</color>
+    <color name="color_btn_disabled">#C2C2C2</color>
+    <color name="color_balck_border">#0DC2C2C2</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorStartGrad">#970037FF</color>
+    <color name="colorEndGrad">#7CAA00FF</color>
+    <color name="colorAccent">#FF6D00</color>
+</resources>

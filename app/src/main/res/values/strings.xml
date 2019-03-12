@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FlagApp</string>
+    <string name="main_country">Страна</string>
+    <string name="main_flag">Флаг</string>
+</resources>
