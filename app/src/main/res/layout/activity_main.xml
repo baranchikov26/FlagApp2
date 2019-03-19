@@ -8,31 +8,21 @@
 
     <TextView
         android:id="@+id/main_tw1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/twStyle"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:drawableStart="@drawable/world"
-        android:drawablePadding="8dp"
-        android:fontFamily="sans-serif-medium"
         android:text="@string/main_country"
-        android:textColor="#666664"
-        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/main_tw2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/twStyle"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:drawableStart="@drawable/flag"
-        android:drawablePadding="8dp"
-        android:fontFamily="sans-serif-medium"
         android:text="@string/main_flag"
-        android:textColor="#666664"
-        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/main_te1" />
 
@@ -44,7 +34,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:ems="16"
-        android:hint="Введи страну"
+        android:hint="@string/te_1"
         android:inputType="textCapWords"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

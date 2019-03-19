@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="main_country_font">24sp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="middle">16dp</dimen>
+    <dimen name="large">32dp</dimen>
+    <dimen name="txt_size">24sp</dimen>
+
+    <!--MainActivity-->
+    <dimen name="country_text_size">@dimen/txt_size</dimen>
 </resources>

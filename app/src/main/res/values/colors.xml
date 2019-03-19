@@ -8,4 +8,5 @@
     <color name="colorStartGrad">#970037FF</color>
     <color name="colorEndGrad">#7CAA00FF</color>
     <color name="colorAccent">#FF6D00</color>
+    <color name="text_color">#666664</color>
 </resources>

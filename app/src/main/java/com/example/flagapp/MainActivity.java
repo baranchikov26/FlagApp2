@@ -1,5 +1,6 @@
 package com.example.flagapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -16,11 +17,17 @@ public class MainActivity extends AppCompatActivity {
     Button btn_main;
     ImageView img_flag;
     EditText country_name;
+    int image_flag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        if (savedInstanceState != null) {
+//            image_flag = savedInstanceState.getInt("image_key");
+//            img_flag.setImageResource(image_flag);
+//        }
 
         btn_main = findViewById(R.id.btn_main);
         img_flag = findViewById(R.id.imageView);
@@ -32,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 switch (country_name.getText().toString().toUpperCase()) {
                     case "РОССИЯ":
                         img_flag.setImageResource(R.drawable.flag_rf);
+                        img_flag.setOnClickListener(imgListener);
+
                         break;
                     case "ТАИЛАНД":
                     case "ТАЙЛАНД":
@@ -62,6 +71,20 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("image_key", image_flag);
+    }
+
+    View.OnClickListener imgListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+            intent.putExtra("country",country_name.getText().toString());
+            startActivity(intent);
+        }
+    };
     TextWatcher textEditWatcher;
 
     {
@@ -80,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 btn_main.setEnabled(!country_name.getText().toString().isEmpty());
 
+
 //                if (!country_name.getText().toString().isEmpty()) {
 //                    btn_main.setEnabled(true);
 //                    btn_main.setBackgroundResource(R.drawable.btn_gradient);
@@ -87,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
 //                    img_flag.setImageResource(R.drawable.flag_grey_big);
 //                    btn_main.setEnabled(false);
 //                    btn_main.setBackgroundResource(R.color.color_btn_disabled);
-
 
 
             }
