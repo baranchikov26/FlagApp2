@@ -23,7 +23,6 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemsViewHol
         Context context = viewGroup.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.item, viewGroup, false);
-
         return new ItemsViewHolder(view);
     }
 
@@ -31,9 +30,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemsViewHol
     public void onBindViewHolder(@NonNull ItemsViewHolder itemsViewHolder, int position) {
         Item item = items.get(position);
         itemsViewHolder.bind(item);
-
     }
-
 
     @Override
     public int getItemCount() {
@@ -60,5 +57,3 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ItemsViewHol
         this.items = items;
     }
 }
-
-

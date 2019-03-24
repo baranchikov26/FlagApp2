@@ -47,7 +47,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/color_balck_border"
+        android:background="@color/color_black_border"
         android:src="@drawable/flag_grey_big"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
