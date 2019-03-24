@@ -28,14 +28,13 @@ public class InfoActivity extends AppCompatActivity {
 
         country = Objects.requireNonNull(getIntent().getExtras()).getString("country");
         preferences = getPreferences(MODE_PRIVATE);
-        country = preferences.getString("country", "страна");
 
         assert country != null;
         switch (country.toUpperCase()) {
             case "РОССИЯ":
-            items.add(new Item(getResources().getStringArray(R.array.ru_text)[0], R.drawable.ru1));
-            items.add(new Item(getResources().getStringArray(R.array.ru_text)[1], R.drawable.ru2));
-            items.add(new Item(getResources().getStringArray(R.array.ru_text)[2], R.drawable.ru3));
+                items.add(new Item(getResources().getStringArray(R.array.ru_text)[0], R.drawable.ru1));
+                items.add(new Item(getResources().getStringArray(R.array.ru_text)[1], R.drawable.ru2));
+                items.add(new Item(getResources().getStringArray(R.array.ru_text)[2], R.drawable.ru3));
                 break;
             case "ТАИЛАНД":
             case "ТАЙЛАНД":
@@ -91,11 +90,11 @@ public class InfoActivity extends AppCompatActivity {
         itemsAdapter.setItems(items);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-            layoutManager.setOrientation(LinearLayout.VERTICAL);
-        } else {
-            layoutManager.setOrientation(LinearLayout.HORIZONTAL);
-        }
+//        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+//            layoutManager.setOrientation(LinearLayout.VERTICAL);
+//        } else {
+//            layoutManager.setOrientation(LinearLayout.HORIZONTAL);
+//        }
         recyclerView.setLayoutManager(layoutManager);
     }
 
