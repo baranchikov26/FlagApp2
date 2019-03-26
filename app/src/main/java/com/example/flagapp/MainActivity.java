@@ -67,10 +67,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (savedInstanceState != null) {
-            img_flag.setImageResource(savedInstanceState.getInt("image_key"));
-        }
-
+//
+//        if (savedInstanceState != null) {
+//            img_flag.setImageResource(savedInstanceState.getInt("image_key"));
+//        }
         btn_main = findViewById(R.id.btn_main);
         img_flag = findViewById(R.id.imageView);
         country_name = findViewById(R.id.main_te1);

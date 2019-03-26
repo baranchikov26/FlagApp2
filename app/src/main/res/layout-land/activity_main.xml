@@ -1,72 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:ignore="MissingDefaultResource">
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:columnCount="5"
-        android:rowCount="3">
+    android:columnCount="5"
+    android:rowCount="3">
 
-        <TextView
-            android:id="@+id/main_tw1"
-            style="@style/twStyle"
-            android:layout_columnSpan="2"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:drawableStart="@drawable/world"
-            android:text="@string/main_country" />
+    <TextView
+        android:id="@+id/main_tw1"
+        style="@style/twStyle"
+        android:layout_columnSpan="2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:drawableStart="@drawable/world"
+        android:text="@string/main_country" />
 
-        <TextView
-            android:id="@+id/main_tw2"
-            style="@style/twStyle"
-            android:layout_columnSpan="3"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:drawableStart="@drawable/flag"
-            android:text="@string/main_flag" />
+    <TextView
+        android:id="@+id/main_tw2"
+        style="@style/twStyle"
+        android:layout_columnSpan="3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:drawableStart="@drawable/flag"
+        android:text="@string/main_flag" />
 
-        <EditText
-            android:id="@+id/main_te1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:layout_marginTop="16dp"
-            android:ems="16"
-            android:hint="Введи страну"
-            android:inputType="textCapWords" />
+    <EditText
+        android:id="@+id/main_te1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_marginTop="16dp"
+        android:ems="16"
+        android:hint="Введи страну"
+        android:inputType="textCapWords" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowSpan="2"
-            android:layout_columnSpan="3"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="4dp"
-            android:background="@color/color_black_border"
-            android:scaleType="centerCrop"
-            android:src="@drawable/flag_grey_big" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowSpan="2"
+        android:layout_columnSpan="3"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/color_black_border"
+        android:scaleType="centerCrop"
+        android:src="@drawable/flag_grey_big" />
 
-        <Button
-            android:id="@+id/btn_main"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:backgroundTint="@color/btn_color_2"
-            android:enabled="false"
-            android:text="ПОКАЗАТЬ"
-            android:textColor="@color/color_btn_main" />
-    </GridLayout>
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/btn_color_2"
+        android:enabled="false"
+        android:text="ПОКАЗАТЬ"
+        android:textColor="@color/color_btn_main" />
+</GridLayout>
